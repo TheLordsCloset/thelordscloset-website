@@ -89,7 +89,8 @@
         </figure>
       </article>
 
-      <form class="mt-12 rounded-3xl bg-sage-700 p-7 text-cream" data-signup-form>
+      <form class="mt-12 rounded-3xl bg-sage-700 p-7 text-cream" name="email-signup" method="POST" action="/" data-netlify="true" data-signup-form>
+        <input type="hidden" name="form-name" value="email-signup" hidden />
         <h2 class="font-display text-2xl">Email signup</h2>
         <p class="mt-2 text-cream/80">Get shop notes in your inbox.</p>
         <label class="mt-5 block text-sm" for="blog-email">Email address</label>

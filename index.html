@@ -231,7 +231,8 @@
           <div class="rounded-3xl bg-sage-600/60 p-8">
             <h3 class="font-display text-2xl">Stay in the loop</h3>
             <p class="mt-2 text-cream/80">Sales, weather and holiday closings, and “just in” finds. No spam - just shop notes.</p>
-            <form class="mt-6 space-y-3" data-signup-form>
+            <form class="mt-6 space-y-3" name="email-signup" method="POST" action="/" data-netlify="true" data-signup-form>
+              <input type="hidden" name="form-name" value="email-signup" hidden />
               <label class="block text-sm" for="home-email">Email address</label>
               <input
                 class="input-focus w-full rounded-2xl border-0 px-4 py-3 text-ink"
