@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>The Lord’s Closet | Neighborly thrift, generous purpose</title>
+    <meta
+      name="description"
+      content="The Lord’s Closet is a small 501(c)(3) thrift shop. Come browse treasures, donate goods, and help us support our community."
+    />
+    <link rel="icon" href="images/logo.jpg" type="image/jpeg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              cream: "#fbf7f2",
+              linen: "#f3ebe3",
+              sage: {
+                50: "#f4f7f5",
+                100: "#e4ede8",
+                200: "#c9d9d0",
+                500: "#5c7a6b",
+                600: "#4a6558",
+                700: "#3d5449",
+              },
+              clay: {
+                50: "#fbf3ef",
+                500: "#c4785a",
+                600: "#b26548",
+              },
+              ink: "#3a322c",
+            },
+            fontFamily: {
+              display: ["Fraunces", "Georgia", "serif"],
+              sans: ["Figtree", "system-ui", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+    <link rel="stylesheet" href="css/site.css" />
+  </head>
+  <body class="font-sans antialiased">
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="sticky top-0 z-40 border-b border-sage-200/70 bg-cream/90 backdrop-blur">
+      <div class="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-3 sm:px-6">
+        <a href="index.html" class="flex items-center gap-3">
+          <img src="images/logo.jpg" alt="" class="h-11 w-11 rounded-xl object-cover" width="44" height="44" />
+          <span>
+            <span class="block font-display text-lg leading-none text-ink">The Lord’s Closet</span>
+            <span class="block text-xs tracking-wide text-sage-600">Community Thrift Store</span>
+          </span>
+        </a>
+
+        <nav class="hidden items-center gap-7 text-sm font-medium text-ink md:flex" aria-label="Primary">
+          <a class="text-sage-700" href="index.html" aria-current="page">Home</a>
+          <a class="hover:text-sage-600" href="about.html">About</a>
+          <a class="hover:text-sage-600" href="hours.html">Hours &amp; Contact</a>
+          <a class="hover:text-sage-600" href="blog.html">Blog</a>
+          <a class="rounded-full bg-clay-500 px-4 py-2 text-white hover:bg-clay-600" href="donate.html">Donate</a>
+        </nav>
+
+        <button
+          class="inline-flex h-10 w-10 items-center justify-center rounded-full border border-sage-200 text-ink md:hidden"
+          type="button"
+          data-nav-toggle
+          aria-expanded="false"
+          aria-controls="mobile-nav"
+        >
+          <span class="sr-only">Menu</span>
+          <svg data-nav-open class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-width="1.8" d="M4 7h16M4 12h16M4 17h16" />
+          </svg>
+          <svg data-nav-close class="hidden h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-width="1.8" d="M6 6l12 12M18 6L6 18" />
+          </svg>
+        </button>
+      </div>
+      <div id="mobile-nav" class="nav-panel border-t border-sage-200 bg-cream md:hidden" data-nav-panel>
+        <nav class="flex flex-col gap-1 px-4 py-3 text-base font-medium" aria-label="Mobile">
+          <a class="rounded-lg bg-sage-100 px-3 py-2 text-sage-700" href="index.html" aria-current="page">Home</a>
+          <a class="rounded-lg px-3 py-2 hover:bg-linen" href="about.html">About</a>
+          <a class="rounded-lg px-3 py-2 hover:bg-linen" href="hours.html">Hours &amp; Contact</a>
+          <a class="rounded-lg px-3 py-2 hover:bg-linen" href="blog.html">Blog</a>
+          <a class="mt-1 rounded-lg bg-clay-500 px-3 py-2 text-center text-white" href="donate.html">Donate</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero-wash relative overflow-hidden">
+        <div class="mx-auto flex min-h-[78vh] max-w-6xl flex-col justify-end px-4 py-16 sm:px-6 sm:py-20">
+          <p class="mb-3 text-sm font-semibold uppercase tracking-[0.2em] text-cream/80">A community thrift store</p>
+          <h1 class="max-w-3xl font-display text-4xl leading-tight text-cream sm:text-6xl">
+            Supporting the Lord’s work at home and around the world.
+          </h1>
+          <p class="mt-5 max-w-xl text-lg text-cream/90">
+            The Lord’s Closet is a small community supported thrift shop where good clothes and household items get a second life—and the proceeds help people in our community and around the world.
+          </p>
+          <div class="mt-8 flex flex-col gap-3 sm:flex-row">
+            <a
+              class="inline-flex items-center justify-center rounded-full bg-cream px-6 py-3 text-center font-semibold text-sage-700 hover:bg-linen"
+              href="hours.html"
+            >
+              Visit Us
+            </a>
+            <a
+              class="inline-flex items-center justify-center rounded-full border border-cream/70 px-6 py-3 text-center font-semibold text-cream hover:bg-white/10"
+              href="donate.html"
+            >
+              Donate
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="mx-auto grid max-w-6xl gap-6 px-4 py-14 sm:px-6 md:grid-cols-3">
+        <div class="rounded-3xl bg-white p-6 shadow-sm ring-1 ring-sage-100">
+          <p class="text-sm font-semibold uppercase tracking-wide text-sage-600">Open this week</p>
+          <p class="mt-2 font-display text-2xl">Saturday, 10–Noon</p>
+        </div>
+        <div class="rounded-3xl bg-white p-6 shadow-sm ring-1 ring-sage-100">
+          <p class="text-sm font-semibold uppercase tracking-wide text-sage-600">Find us</p>
+          <p class="mt-2 font-display text-2xl">525 Main Street</p>
+          <p class="mt-2 text-sm text-ink/70">Griswold IA, 51535 - Street parking out front</p>
+        </div>
+        <div class="rounded-3xl bg-sage-700 p-6 text-cream shadow-sm">
+          <p class="text-sm font-semibold uppercase tracking-wide text-cream/70">A warm welcome</p>
+          <p class="mt-2 font-display text-2xl">Come as you are</p>
+          <p class="mt-2 text-sm text-cream/80">Browse slowly, ask questions, and take home something you love.</p>
+        </div>
+      </section>
+
+      <section class="soft-grid border-y border-sage-100">
+        <div class="mx-auto max-w-6xl px-4 py-16 sm:px-6">
+          <div class="max-w-2xl">
+            <h2 class="font-display text-3xl sm:text-4xl">Why visit the shop</h2>
+            <p class="mt-4 text-lg text-ink/80">
+              Walking through the door is the best way to meet us. The racks change every week, and when you shop with us, all profits go directly to support ministries that help those in need and share the good news of Jesus Christ at home and around the world.
+            </p>
+          </div>
+          <div class="mt-10 grid gap-6 md:grid-cols-2">
+            <article class="overflow-hidden rounded-3xl bg-white shadow-sm ring-1 ring-sage-100">
+              <div class="flex h-40 items-end bg-sage-100 px-6 py-5">
+                <p class="font-display text-5xl text-sage-500">01</p>
+              </div>
+              <div class="p-6">
+                <h3 class="font-display text-2xl">Everyday finds</h3>
+                <p class="mt-2 text-ink/75">
+                  Clothes, housewares, books, and small surprises—priced to be affordable and fun to hunt through.
+                </p>
+              </div>
+            </article>
+            <article class="overflow-hidden rounded-3xl bg-white shadow-sm ring-1 ring-sage-100">
+              <div class="flex h-40 items-end bg-clay-50 px-6 py-5">
+                <p class="font-display text-5xl text-clay-500">02</p>
+              </div>
+              <div class="p-6">
+                <h3 class="font-display text-2xl">A friendly stop</h3>
+                <p class="mt-2 text-ink/75">
+                  We’re a small shop, not a big box. Expect a hello, a little help if you want it, and room to browse.
+                </p>
+              </div>
+            </article>
+          </div>
+          <a
+            class="mt-8 inline-flex rounded-full bg-sage-600 px-6 py-3 font-semibold text-white hover:bg-sage-700"
+            href="hours.html"
+          >
+            Get hours &amp; directions
+          </a>
+        </div>
+      </section>
+
+      <section class="mx-auto max-w-6xl px-4 py-16 sm:px-6">
+        <h2 class="font-display text-3xl sm:text-4xl">A little about us</h2>
+        <div class="mt-8 grid gap-6 lg:grid-cols-3">
+          <article class="rounded-3xl bg-linen p-7">
+            <p class="text-sm font-semibold uppercase tracking-wide text-sage-600">Mission</p>
+            <h3 class="mt-2 font-display text-2xl">Steward what we already have</h3>
+            <p class="mt-3 text-ink/80">
+              The Lord’s Closet offers quality secondhand goods at fair prices, welcomes every neighbor, and exists to serve members of our local community and to raise funds for ministries that help those in need and share the Gospel.
+            </p>
+          </article>
+          <article class="rounded-3xl bg-linen p-7">
+            <p class="text-sm font-semibold uppercase tracking-wide text-sage-600">Short history</p>
+            <h3 class="mt-2 font-display text-2xl">Different locations, consistent vision</h3>
+            <p class="mt-3 text-ink/80">
+              The ministry began as an extension of The Lord’s Cupboard. However, when the incoming donations exceeded the capacity of that ministry location, founder Pat Gwinn, with the help of her husband Buddy, established The Lord’s Closet in a separate building. The location has changed over the years, but the vision has stayed the same - helping our neighbors and the broader community.
+            </p>
+          </article>
+          <article class="rounded-3xl bg-linen p-7">
+            <p class="text-sm font-semibold uppercase tracking-wide text-sage-600">Where the profits go</p>
+            <h3 class="mt-2 font-display text-2xl">Serving others</h3>
+            <p class="mt-3 text-ink/80">
+              After operating costs, proceeds help with local benevolence—clothing, household needs, and support for families in hard seasons. Proceeds also support ministries that help those in need and share the Gospel.
+            </p>
+          </article>
+        </div>
+        <a class="mt-8 inline-block font-semibold text-sage-700 hover:underline" href="about.html">Read our story →</a>
+      </section>
+
+      <section class="bg-sage-700 text-cream">
+        <div class="mx-auto grid max-w-6xl items-center gap-10 px-4 py-16 sm:px-6 lg:grid-cols-2">
+          <div>
+            <h2 class="font-display text-3xl sm:text-4xl">Your donations help change the world</h2>
+            <p class="mt-4 text-lg text-cream/85">
+              Gently used clothing and household items keep our racks full, the shop running, and the mission moving.
+            </p>
+            <ul class="mt-6 space-y-2 text-cream/85">
+              <li>Clean, wearable clothes and shoes</li>
+              <li>Housewares in good working order</li>
+              <li>Monetary gifts, anytime</li>
+            </ul>
+            <a
+              class="mt-8 inline-flex rounded-full bg-cream px-6 py-3 font-semibold text-sage-700 hover:bg-linen"
+              href="donate.html"
+            >
+              Donation guidelines
+            </a>
+          </div>
+          <div class="rounded-3xl bg-sage-600/60 p-8">
+            <h3 class="font-display text-2xl">Stay in the loop</h3>
+            <p class="mt-2 text-cream/80">Sales, weather and holiday closings, and “just in” finds. No spam - just shop notes.</p>
+            <form class="mt-6 space-y-3" data-signup-form>
+              <label class="block text-sm" for="home-email">Email address</label>
+              <input
+                class="input-focus w-full rounded-2xl border-0 px-4 py-3 text-ink"
+                id="home-email"
+                name="email"
+                type="email"
+                autocomplete="email"
+                required
+                placeholder="you@example.com"
+              />
+              <button class="w-full rounded-full bg-clay-500 px-5 py-3 font-semibold text-white hover:bg-clay-600" type="submit">
+                Sign up
+              </button>
+              <p class="hidden text-sm text-cream" data-signup-note></p>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="border-t border-sage-100 bg-linen">
+      <div class="mx-auto grid max-w-6xl gap-8 px-4 py-12 sm:px-6 md:grid-cols-3">
+        <div>
+          <p class="font-display text-xl">The Lord’s Closet</p>
+          <p class="mt-2 text-sm text-ink/70">A community thrift store. Come visit, browse, and be part of the story.</p>
+        </div>
+        <div>
+          <p class="font-semibold">Visit</p>
+          <p class="mt-2 text-sm text-ink/75">525 Main Street<br />Griswold, IA 51535</p>
+          <p class="mt-2 text-sm text-ink/75">Tue–Sat, 10am–4pm</p>
+        </div>
+        <div>
+          <p class="font-semibold">Say hello</p>
+          <p class="mt-2 text-sm">
+            <a class="text-sage-700 hover:underline" href="mailto:thelordscloset@netins.net">thelordscloset@netins.net</a>
+          </p>
+        </div>
+      </div>
+      <p class="border-t border-sage-100 px-4 py-4 text-center text-xs text-ink/55">
+        © <span id="year"></span> The Lord’s Closet. All rights reserved.
+      </p>
+    </footer>
+    <script src="js/site.js"></script>
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>

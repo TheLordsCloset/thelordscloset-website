@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Blog | The Lord’s Closet</title>
+    <meta name="description" content="News, volunteer notes, and shop stories from The Lord’s Closet." />
+    <link rel="icon" href="images/logo.jpg" type="image/jpeg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              cream: "#fbf7f2",
+              linen: "#f3ebe3",
+              sage: { 50: "#f4f7f5", 100: "#e4ede8", 200: "#c9d9d0", 500: "#5c7a6b", 600: "#4a6558", 700: "#3d5449" },
+              clay: { 50: "#fbf3ef", 500: "#c4785a", 600: "#b26548" },
+              ink: "#3a322c",
+            },
+            fontFamily: {
+              display: ["Fraunces", "Georgia", "serif"],
+              sans: ["Figtree", "system-ui", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+    <link rel="stylesheet" href="css/site.css" />
+  </head>
+  <body class="font-sans antialiased">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="sticky top-0 z-40 border-b border-sage-200/70 bg-cream/90 backdrop-blur">
+      <div class="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-3 sm:px-6">
+        <a href="index.html" class="flex items-center gap-3">
+          <img src="images/logo.jpg" alt="" class="h-11 w-11 rounded-xl object-cover" width="44" height="44" />
+          <span>
+            <span class="block font-display text-lg leading-none text-ink">The Lord’s Closet</span>
+            <span class="block text-xs tracking-wide text-sage-600">Community Thrift Store</span>
+          </span>
+        </a>
+        <nav class="hidden items-center gap-7 text-sm font-medium text-ink md:flex" aria-label="Primary">
+          <a class="hover:text-sage-600" href="index.html">Home</a>
+          <a class="hover:text-sage-600" href="about.html">About</a>
+          <a class="hover:text-sage-600" href="hours.html">Hours &amp; Contact</a>
+          <a class="text-sage-700" href="blog.html" aria-current="page">Blog</a>
+          <a class="rounded-full bg-clay-500 px-4 py-2 text-white hover:bg-clay-600" href="donate.html">Donate</a>
+        </nav>
+        <button class="inline-flex h-10 w-10 items-center justify-center rounded-full border border-sage-200 text-ink md:hidden" type="button" data-nav-toggle aria-expanded="false" aria-controls="mobile-nav">
+          <span class="sr-only">Menu</span>
+          <svg data-nav-open class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-width="1.8" d="M4 7h16M4 12h16M4 17h16" /></svg>
+          <svg data-nav-close class="hidden h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-width="1.8" d="M6 6l12 12M18 6L6 18" /></svg>
+        </button>
+      </div>
+      <div id="mobile-nav" class="nav-panel border-t border-sage-200 bg-cream md:hidden" data-nav-panel>
+        <nav class="flex flex-col gap-1 px-4 py-3 text-base font-medium" aria-label="Mobile">
+          <a class="rounded-lg px-3 py-2 hover:bg-linen" href="index.html">Home</a>
+          <a class="rounded-lg px-3 py-2 hover:bg-linen" href="about.html">About</a>
+          <a class="rounded-lg px-3 py-2 hover:bg-linen" href="hours.html">Hours &amp; Contact</a>
+          <a class="rounded-lg bg-sage-100 px-3 py-2 text-sage-700" href="blog.html" aria-current="page">Blog</a>
+          <a class="mt-1 rounded-lg bg-clay-500 px-3 py-2 text-center text-white" href="donate.html">Donate</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main" class="mx-auto max-w-3xl px-4 py-14 sm:px-6">
+      <p class="text-sm font-semibold uppercase tracking-[0.18em] text-sage-600">From the shop</p>
+      <h1 class="mt-3 font-display text-4xl sm:text-5xl">Blog</h1>
+      <p class="mt-4 text-lg text-ink/80">Updates and Sale Announcements</p>
+
+      <article class="mt-10 rounded-3xl bg-white p-6 shadow-sm ring-1 ring-sage-100 sm:p-7">
+        <p class="text-sm text-sage-600">September 2026</p>
+        <h2 class="mt-2 font-display text-2xl">Back to school gear!</h2>
+        <p class="mt-3 text-ink/80">Stop in to see our selection of back to school items and clothing.</p>
+        <figure class="mt-6 overflow-hidden rounded-2xl bg-sage-500 p-2 sm:p-3">
+          <img
+            src="images/back-to-school.jpg"
+            alt="Back to school clothing, backpacks, and gear displayed inside The Lord’s Closet"
+            class="h-auto w-full rounded-xl object-cover"
+            width="1600"
+            height="1200"
+          />
+        </figure>
+      </article>
+
+      <form class="mt-12 rounded-3xl bg-sage-700 p-7 text-cream" data-signup-form>
+        <h2 class="font-display text-2xl">Email signup</h2>
+        <p class="mt-2 text-cream/80">Get shop notes in your inbox.</p>
+        <label class="mt-5 block text-sm" for="blog-email">Email address</label>
+        <input class="input-focus mt-2 w-full rounded-2xl border-0 px-4 py-3 text-ink" id="blog-email" name="email" type="email" required placeholder="you@example.com" />
+        <button class="mt-4 rounded-full bg-clay-500 px-6 py-3 font-semibold text-white hover:bg-clay-600" type="submit">Sign up</button>
+        <p class="mt-3 hidden text-sm" data-signup-note></p>
+      </form>
+    </main>
+
+    <footer class="border-t border-sage-100 bg-linen">
+      <div class="mx-auto max-w-6xl px-4 py-10 sm:px-6">
+        <p class="font-display text-xl">The Lord’s Closet</p>
+        <p class="mt-2 text-sm text-ink/70">News from a small shop with a big welcome.</p>
+      </div>
+      <p class="border-t border-sage-100 px-4 py-4 text-center text-xs text-ink/55">© <span id="year"></span> The Lord’s Closet.</p>
+    </footer>
+    <script src="js/site.js"></script>
+    <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+  </body>
+</html>

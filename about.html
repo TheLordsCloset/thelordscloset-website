@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>About | The Lord’s Closet</title>
+    <meta name="description" content="Learn the mission, history, and impact of The Lord’s Closet, a 501(c)(3) thrift shop." />
+    <link rel="icon" href="images/logo.jpg" type="image/jpeg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              cream: "#fbf7f2",
+              linen: "#f3ebe3",
+              sage: { 50: "#f4f7f5", 100: "#e4ede8", 200: "#c9d9d0", 500: "#5c7a6b", 600: "#4a6558", 700: "#3d5449" },
+              clay: { 50: "#fbf3ef", 500: "#c4785a", 600: "#b26548" },
+              ink: "#3a322c",
+            },
+            fontFamily: {
+              display: ["Fraunces", "Georgia", "serif"],
+              sans: ["Figtree", "system-ui", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+    <link rel="stylesheet" href="css/site.css" />
+  </head>
+  <body class="font-sans antialiased">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="sticky top-0 z-40 border-b border-sage-200/70 bg-cream/90 backdrop-blur">
+      <div class="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-3 sm:px-6">
+        <a href="index.html" class="flex items-center gap-3">
+          <img src="images/logo.jpg" alt="" class="h-11 w-11 rounded-xl object-cover" width="44" height="44" />
+          <span>
+            <span class="block font-display text-lg leading-none text-ink">The Lord’s Closet</span>
+            <span class="block text-xs tracking-wide text-sage-600">Community Thrift Store</span>
+          </span>
+        </a>
+        <nav class="hidden items-center gap-7 text-sm font-medium text-ink md:flex" aria-label="Primary">
+          <a class="hover:text-sage-600" href="index.html">Home</a>
+          <a class="text-sage-700" href="about.html" aria-current="page">About</a>
+          <a class="hover:text-sage-600" href="hours.html">Hours &amp; Contact</a>
+          <a class="hover:text-sage-600" href="blog.html">Blog</a>
+          <a class="rounded-full bg-clay-500 px-4 py-2 text-white hover:bg-clay-600" href="donate.html">Donate</a>
+        </nav>
+        <button class="inline-flex h-10 w-10 items-center justify-center rounded-full border border-sage-200 text-ink md:hidden" type="button" data-nav-toggle aria-expanded="false" aria-controls="mobile-nav">
+          <span class="sr-only">Menu</span>
+          <svg data-nav-open class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-width="1.8" d="M4 7h16M4 12h16M4 17h16" /></svg>
+          <svg data-nav-close class="hidden h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-width="1.8" d="M6 6l12 12M18 6L6 18" /></svg>
+        </button>
+      </div>
+      <div id="mobile-nav" class="nav-panel border-t border-sage-200 bg-cream md:hidden" data-nav-panel>
+        <nav class="flex flex-col gap-1 px-4 py-3 text-base font-medium" aria-label="Mobile">
+          <a class="rounded-lg px-3 py-2 hover:bg-linen" href="index.html">Home</a>
+          <a class="rounded-lg bg-sage-100 px-3 py-2 text-sage-700" href="about.html" aria-current="page">About</a>
+          <a class="rounded-lg px-3 py-2 hover:bg-linen" href="hours.html">Hours &amp; Contact</a>
+          <a class="rounded-lg px-3 py-2 hover:bg-linen" href="blog.html">Blog</a>
+          <a class="mt-1 rounded-lg bg-clay-500 px-3 py-2 text-center text-white" href="donate.html">Donate</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main" class="mx-auto max-w-3xl px-4 py-14 sm:px-6">
+      <p class="text-sm font-semibold uppercase tracking-[0.18em] text-sage-600">About the shop</p>
+      <h1 class="mt-3 font-display text-4xl sm:text-5xl">Small shop. Open door. Generous purpose.</h1>
+      <p class="mt-5 text-lg text-ink/80">
+        The Lord’s Closet is a 501(c)(3) thrift shop. We exist to make good things affordable, keep useful items in circulation, and turn everyday shopping into community care.
+      </p>
+
+      <section class="mt-12 rounded-3xl bg-white p-7 shadow-sm ring-1 ring-sage-100">
+        <h2 class="font-display text-3xl">Mission statement</h2>
+        <p class="mt-4 text-ink/80">
+          The Lord’s Closet Community Thrift Store exists to serve members of our local community and to raise funds for carefully selected ministries that help those in need and share the Good News of Jesus Christ at home and around the world.
+        </p>
+        <p class="mt-4 text-ink/80">
+          When you shop with us, all profits go directly to support these ministries. At The Lord’s Closet, your donated items and your purchases help further God’s work. And if you’ve never heard the Good News of the Gospel and would like to check it out,
+          <a class="font-semibold text-sage-700 underline hover:text-sage-600" href="https://whattimeispurple.com/discover-the-gospel/" target="_blank" rel="noopener noreferrer">click here</a>.
+        </p>
+      </section>
+
+      <section class="mt-8 rounded-3xl bg-linen p-7">
+        <h2 class="font-display text-3xl">A short history</h2>
+        <div class="mt-4 space-y-4 text-ink/80">
+          <p>
+            The Lord’s Closet Community Thrift Store located at 525 Main Street in Griswold, Iowa has been a contributing part of the community for many years. The ministry began as an extension of The Lord’s Cupboard. However, when the incoming donations exceeded the capacity of that ministry location, founder Pat Gwinn, with the help of her husband Buddy, established The Lord’s Closet in a separate building.
+          </p>
+          <p>
+            After her death in 2009, those left operating the ministry came to really appreciate how much work she had done. More volunteers were added and at one time the ministry had volunteers from almost all of the churches in Griswold. Those numbers greatly decreased during and after COVID, but the ministry is still completely staffed by volunteers who donate their time sorting and pricing items, manning the shop during open hours, and reaching out to the community in other ways.
+          </p>
+          <p>The ministry of The Lord’s Closet is threefold.</p>
+          <ol class="list-decimal space-y-4 pl-5">
+            <li>
+              First, all proceeds go to support ministries close to home and around the world that seek to help those in need and share the Good News of Jesus Christ. The Lord’s Closet is a 501(c)(3) organization whose mission is to support other ministries with the proceeds earned in the shop. A list of those ministries can be found in the
+              <a class="font-semibold text-sage-700 underline hover:text-sage-600" href="#partners">Our Partners</a>
+              section below.
+            </li>
+            <li>
+              Second, all Bibles, Christian books, and homeschooling materials are free and our low prices, color-of-the-week sales, and fill-a-bag sales are a blessing to all of our shoppers. Additionally, household items and clothing are provided free of charge to those experiencing an urgent need, such as in the case of fire or other disaster, and free merchandise certificates are passed out annually for Back-to-School and Christmas.
+            </li>
+            <li>
+              Third, the shop provides Griswold and surrounding community residents a convenient opportunity to give to others by donating their gently used clean clothing and other household items for resale. See our
+              <a class="font-semibold text-sage-700 underline hover:text-sage-600" href="donate.html">Donate</a>
+              page for more information if you have donations.
+            </li>
+          </ol>
+          <p>
+            If you would like more information about the ministry of The Lord’s Closet, please stop by during our regular hours,
+            <a class="font-semibold text-sage-700 underline hover:text-sage-600" href="hours.html">Saturdays 10–Noon</a>,
+            and we’d love to share the vision.
+          </p>
+        </div>
+      </section>
+
+      <section id="partners" class="mt-8 scroll-mt-24 rounded-3xl bg-white p-6 shadow-sm ring-1 ring-sage-100 sm:p-7">
+        <h2 class="font-display text-3xl">Our Partners</h2>
+        <p class="mt-4 text-ink/80">
+          Funds raised by sales at The Lord’s Closet support Christian ministry partners close to home and around the world. These partners are supplying aid and God’s Word to people who might otherwise never know of our Savior, Jesus Christ. Here’s a list of our ministry partners:
+        </p>
+        <div class="mt-6 space-y-5">
+          <article class="rounded-2xl bg-linen p-5">
+            <h3 class="font-display text-2xl">
+              <a class="text-sage-700 hover:underline" href="https://opendoormission.org/" target="_blank" rel="noopener noreferrer">Open Door Mission</a>
+            </h3>
+            <p class="mt-3 text-ink/80">
+              Open Door Mission is a Gospel Rescue Mission founded in 1954 committed to breaking the cycle of homelessness and poverty. Each day, Open Door Missions’ campus offers 917 safe, shelter beds to people experiencing homelessness, serves over 5,366 nutritious meals to feed the hungry, and provides homeless preventive resources to more than 1,270 people living in poverty to empower them to remain in their own homes. In addition, we offer more than 40 free programs and services to the community, providing pathways to stability, self-sufficiency and hope.
+            </p>
+            <a
+              class="mt-5 inline-flex rounded-full bg-sage-600 px-5 py-2.5 text-sm font-semibold text-white hover:bg-sage-700"
+              href="https://opendoormission.org/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Open Door Mission
+            </a>
+          </article>
+          <article class="rounded-2xl bg-linen p-5">
+            <h3 class="font-display text-2xl">
+              <a class="text-sage-700 hover:underline" href="https://makersandmeans.org/about/" target="_blank" rel="noopener noreferrer">Makers and Means</a>
+            </h3>
+            <p class="mt-3 text-ink/80">
+              The mission of Makers and Means is to bring together those indigenous pastors that are currently doing Gospel work around the world with those in the U.S. who desire to finance that Gospel work.
+            </p>
+            <a
+              class="mt-5 inline-flex rounded-full bg-sage-600 px-5 py-2.5 text-sm font-semibold text-white hover:bg-sage-700"
+              href="https://makersandmeans.org/about/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Makers and Means
+            </a>
+          </article>
+          <article class="rounded-2xl bg-linen p-5">
+            <h3 class="font-display text-2xl">
+              <a class="text-sage-700 hover:underline" href="https://www.iowalcclinic.org/" target="_blank" rel="noopener noreferrer">LC Clinic</a>
+            </h3>
+            <p class="mt-3 text-ink/80">
+              LC Clinic is a pregnancy medical clinic that provides free and confidential services. Located in Stuart, Creston, and Atlantic Iowa, they help clients navigate their sexual health, providing them with information for their health decisions, as well as STI testing, pregnancy testing, and limited obstetric ultrasounds.
+            </p>
+            <a
+              class="mt-5 inline-flex rounded-full bg-sage-600 px-5 py-2.5 text-sm font-semibold text-white hover:bg-sage-700"
+              href="https://www.iowalcclinic.org/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              LC Clinic
+            </a>
+          </article>
+          <article class="rounded-2xl bg-linen p-5">
+            <h3 class="font-display text-2xl">
+              <a class="text-sage-700 hover:underline" href="https://pcsi.care" target="_blank" rel="noopener noreferrer">PCSI</a>
+            </h3>
+            <p class="mt-3 text-ink/80">
+              Pregnancy Center of Southwest Iowa (PCSI) is a Christ-centered ministry serving women and men who are facing an unplanned pregnancy. The ministry provides nurturing support and advice before, during and after pregnancy. PCSI was founded in 2003. Since then, many volunteers have helped numerous women choose life for their babies by either accepting their role as a parent or giving their baby up for adoption. In John 10:10 Jesus said, “I have come that they may have life, and that they may have it more abundantly.” PCSI exists for the same purpose: to facilitate abundant life for parents and babies.
+            </p>
+            <a
+              class="mt-5 inline-flex rounded-full bg-sage-600 px-5 py-2.5 text-sm font-semibold text-white hover:bg-sage-700"
+              href="https://pcsi.care"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              PCSI
+            </a>
+          </article>
+        </div>
+      </section>
+
+      <section class="mt-8 rounded-3xl bg-white p-7 shadow-sm ring-1 ring-sage-100">
+        <h2 class="font-display text-3xl">Other outreaches</h2>
+        <figure class="mt-6 overflow-hidden rounded-2xl bg-linen shadow-sm ring-1 ring-sage-100">
+          <img
+            src="images/outreach.jpg"
+            alt="Bibles, homeschool materials, Christian books, and The Lord’s Closet merchandise certificates arranged on a table"
+            class="h-auto w-full object-cover"
+            width="1600"
+            height="1200"
+          />
+        </figure>
+        <p class="mt-6 font-semibold text-ink">Our Local Ministry Outreach:</p>
+        <ul class="mt-4 list-disc space-y-3 pl-5 text-ink/80">
+          <li>$20 Back to School Merchandise Certificates distributed to families with children</li>
+          <li>$25 Thanksgiving Merchandise Certificates distributed through The Lord’s Cupboard</li>
+          <li>All Bibles, Homeschool materials, and Christian books given free of charge</li>
+          <li>Free household items /clothing assistance given to those with urgent needs (fire, etc.)</li>
+        </ul>
+      </section>
+
+      <div class="mt-10 flex flex-col gap-3 sm:flex-row">
+        <a class="inline-flex justify-center rounded-full bg-sage-600 px-6 py-3 font-semibold text-white hover:bg-sage-700" href="hours.html">Visit Us</a>
+        <a class="inline-flex justify-center rounded-full border border-sage-300 px-6 py-3 font-semibold text-sage-700 hover:bg-linen" href="donate.html">Donate</a>
+      </div>
+    </main>
+
+    <footer class="border-t border-sage-100 bg-linen">
+      <div class="mx-auto grid max-w-6xl gap-8 px-4 py-12 sm:px-6 md:grid-cols-3">
+        <div>
+          <p class="font-display text-xl">The Lord’s Closet</p>
+          <p class="mt-2 text-sm text-ink/70">Community Thrift Store</p>
+        </div>
+        <div>
+          <p class="font-semibold">Visit</p>
+          <p class="mt-2 text-sm text-ink/75">525 Main Street<br />Griswold, IA 51535</p>
+        </div>
+        <div>
+          <p class="font-semibold">Say hello</p>
+          <p class="mt-2 text-sm">
+            <a class="text-sage-700 hover:underline" href="mailto:thelordscloset@netins.net">thelordscloset@netins.net</a>
+          </p>
+        </div>
+      </div>
+      <p class="border-t border-sage-100 px-4 py-4 text-center text-xs text-ink/55">© <span id="year"></span> The Lord’s Closet.</p>
+    </footer>
+    <script src="js/site.js"></script>
+    <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+  </body>
+</html>

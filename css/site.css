@@ -1,0 +1,61 @@
+:root {
+  --cream: #fbf7f2;
+  --linen: #f3ebe3;
+  --sage: #5c7a6b;
+  --sage-dark: #3d5449;
+  --clay: #c4785a;
+  --ink: #3a322c;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--cream);
+  color: var(--ink);
+}
+
+.skip-link {
+  position: absolute;
+  left: 1rem;
+  top: -3rem;
+  z-index: 100;
+  border-radius: 9999px;
+  background: var(--sage-dark);
+  color: white;
+  padding: 0.5rem 1rem;
+}
+
+.skip-link:focus {
+  top: 1rem;
+}
+
+.hero-wash {
+  background-color: #3d5449;
+  background-image:
+    radial-gradient(ellipse at 18% 20%, rgba(196, 120, 90, 0.35), transparent 42%),
+    radial-gradient(ellipse at 88% 10%, rgba(251, 247, 242, 0.12), transparent 38%),
+    linear-gradient(165deg, #4a6558 0%, #3d5449 48%, #2f4038 100%);
+}
+
+.soft-grid {
+  background-image:
+    radial-gradient(circle at 1px 1px, rgba(92, 122, 107, 0.12) 1px, transparent 0);
+  background-size: 22px 22px;
+}
+
+.nav-panel {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.28s ease;
+}
+
+.nav-panel.open {
+  max-height: 28rem;
+}
+
+.input-focus:focus {
+  outline: 2px solid var(--sage);
+  outline-offset: 2px;
+}
